@@ -5,10 +5,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List Shop"
+        android:text="list Shop"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
-        android:onClick="clickListShop" />
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/map" />
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -17,6 +20,6 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="appewtc.masterung.welovewheelchair.MapsActivity"
-        android:layout_above="@+id/button2" />
+        tools:context="appewtc.masterung.welovewheelchair.MapsActivity" />
+
 </RelativeLayout>
