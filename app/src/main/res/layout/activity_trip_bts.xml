@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="appewtc.masterung.welovewheelchair.trip_bts"
+    android:background="@drawable/bg100">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView16"
+        android:src="@drawable/b_bts"
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView16"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:background="#82ffffff" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/inf3"
+                android:id="@+id/textView28"
+                android:textSize="@dimen/h2"
+                android:layout_weight="10" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
